@@ -1,0 +1,20 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/Banking
+    username: Burdila
+    password: Bank123$
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+    hibernate:
+       ddl-auto: update
+       open-in-view: false
+       show-sql: true
+  task:
+    scheduling:
+      pool:
+        size: 10
